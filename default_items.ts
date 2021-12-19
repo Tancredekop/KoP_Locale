@@ -396,7 +396,7 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Corrupted Longbow",
                     ru: "Искажённый длинный лук",
-                    fr: "Arc long corrompu",
+                    fr: "Arc long de corruption",
                 },
                 desc: {
                     en: `Active: Empowers you and increases your attack speed by ${ItemAbilityData.CORRUPTED_LONGBOW_BONUS_ATTACK_SPEED * 100}% and movement speed by ${ItemAbilityData.CORRUPTED_LONGBOW_BONUS_MOVESPEED} for ${(ItemAbilityData.CORRUPTED_LONGBOW_DURATION / 1000).toFixed(1)} sec.<br />` +
@@ -644,7 +644,7 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                     en: `UNIQUE: Your attacks lower enemy armor by ${ItemAbilityData.DEMON_RING_ARMOR_REDUCTION} for 4 seconds`,
                     ru: `УНИКАЛЬНО(Пассивно): Ваши атаки уменьшают вражескую броню на ${ItemAbilityData.DEMON_RING_ARMOR_REDUCTION} на 4 сек.`,
                     br: `[Único]: Seus ataques reduzem a armadura inimiga por ${ItemAbilityData.DEMON_RING_ARMOR_REDUCTION} por 4 segundos.`,
-                    fr: `[UNIQUE]: Tes attaques diminuent l'armure de ton ennmi de ${ItemAbilityData.DEMON_RING_ARMOR_REDUCTION} points d'armure pour 4 sec.`,
+                    fr: `[UNIQUE]: Tes attaques J diminuent l'armure de ton ennemi de ${ItemAbilityData.DEMON_RING_ARMOR_REDUCTION} points d'armure pour 4 sec.`,
                 }
             }
         case Shared.ItemList.Gold_Ring:
@@ -658,6 +658,7 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                     en: "UNIQUE: Killing an enemy unit or assisting for hero kill gives additional 25 golds",
                     ru: "УНИКАЛЬНО(Пассивно): Убивая вражеских миньонов или получая содействия в убийстве вражеских героев, вы получаете дополнительно 25 золота",
                     br: "[Único]: Matar uma unidade inimiga ou personagem, faz com que você ganhe 25 ouros adicionais.",
+                    fr: "[UNIQUE]: Tuer n'importe quelle unité ennemie ou aider à tuer un héros ennemi donne 25 pièces d'or supplémentaires",
                 }
             }
 
@@ -666,11 +667,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Frost Ring",
                     ru: "Морозное кольцо",
+                    fr: `Anneau de gel`,
                 },
                 desc: {
                     en: `Active: Create an frozen bolt that freeze target on impact for ${(ItemAbilityData.FROST_RING_ROOT_DURATION / 1000).toFixed(1)} sec and deals ${ItemAbilityData.FROST_RING_DAMAGE} damage - ${(ItemAbilityData.FROST_RING_COOLDOWN / 1000).toFixed(1)} sec cd`,
                     ru: `УНИКАЛЬНО(Активно): Создаёт ледяной снаряд, который замораживает цель при попадании на ${(ItemAbilityData.FROST_RING_ROOT_DURATION / 1000).toFixed(1)} сек. и наносит ей ${ItemAbilityData.FROST_RING_DAMAGE} магического урона. (Перезарядка: ${(ItemAbilityData.FROST_RING_COOLDOWN / 1000).toFixed(1)} сек.)`,
                     br: `[Ativo]: O anel cria um estilhaço de gelo que congela o alvo no impacto por ${(ItemAbilityData.FROST_RING_ROOT_DURATION / 1000).toFixed(1)} seg e dá ${ItemAbilityData.FROST_RING_DAMAGE} de dano.\n [Tempo de recarga: ${(ItemAbilityData.FROST_RING_COOLDOWN / 1000).toFixed(1)} seg.]`,
+                    fr: `[ACTIVATION]: Créer un éclair gelé qui glace la cible à l'impact pour ${(ItemAbilityData.FROST_RING_ROOT_DURATION / 1000).toFixed(1)} sec et fait ${ItemAbilityData.FROST_RING_DAMAGE} points de dégâts. \n [Délai de récupération: ${(ItemAbilityData.FROST_RING_COOLDOWN / 1000).toFixed(1)} sec.]`,
                 }
             }
 
@@ -679,11 +682,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Chronos Ring",
                     ru: "Кольцо Хроноса",
+                    fr: `Anneau du Temps`,
                 },
                 desc: {
                     en: `Active: Refresh all abilites and items cooldown - ${(ItemAbilityData.CHRONOS_RING_COOLDOWN / 1000).toFixed(1)} sec cooldown`,
                     ru: `УНИКАЛЬНО(Активно): Сбрасывает перезарядку всех способностей и имеющихся предметов. (Перезарядка: ${(ItemAbilityData.CHRONOS_RING_COOLDOWN / 1000).toFixed(1)} сек.)`,
                     br: `[Ativo]: Reseta o tempo de recarga de todas as habilidades e itens.\n [Tempo de recarga: ${(ItemAbilityData.CHRONOS_RING_COOLDOWN / 1000).toFixed(1)} seg.]`,
+                    fr: `[ACTIVATION]: Remets à zéro les délais de récupération de toutes les compétences et objets. \n [Délai de récupération : ${(ItemAbilityData.CHRONOS_RING_COOLDOWN / 1000).toFixed(1)} sec.]`,
                 }
             }
         case Shared.ItemList.Corrupted_Ring:
@@ -691,11 +696,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Corrupted Ring",
                     ru: "Искажённое кольцо",
+                    fr: "Anneau de Corruption",
                 },
                 desc: {
                     en: `Active: Dash you in your direction - ${(ItemAbilityData.CORRUPTED_RING_COOLDOWN / 1000).toFixed(1)} sec cooldown`,
                     ru: `УНИКАЛЬНО(Активно): Вы совершаете рывок в направлении своего движения. (Перезарядка: ${(ItemAbilityData.CORRUPTED_RING_COOLDOWN / 1000).toFixed(1)} сек.)`,
                     br: `[Ativo]: Lança seu personagem para frente na direção que ele está olhando.\n [Tempo de recarga: ${(ItemAbilityData.CORRUPTED_RING_COOLDOWN / 1000).toFixed(1)} seg.]`,
+                    fr: `[ACTIVATION]: Déplacement ultra rapide dans la direction à laquelle tu fais face.\n [Délai de récupération: ${(ItemAbilityData.CORRUPTED_RING_COOLDOWN / 1000).toFixed(1)} sec.]`,
                 }
             }
 
@@ -704,11 +711,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Berserker Ring",
                     ru: "Кольцо берсерка",
+                    fr: "Anneau du Berserker",
                 },
                 desc: {
                     en: `UNIQUE: Your attacks deal ${ItemAbilityData.BERSERKER_RING_DAMAGE_PER_FRAG} more damage for each 10% HP you are missing.`,
                     ru: `УНИКАЛЬНО(Пассивно): Ваши атаки наносят на ${ItemAbilityData.BERSERKER_RING_DAMAGE_PER_FRAG} ед. больше физического урона за каждые недостающие 10% вашего здоровья`,
                     br: `[Único]: Seus ataques dão ${ItemAbilityData.BERSERKER_RING_DAMAGE_PER_FRAG} mais dano para cada 10% de vida que você tenha perdido.`,
+                    fr: `[UNIQUE]: Tes attaques J font ${ItemAbilityData.BERSERKER_RING_DAMAGE_PER_FRAG}  de dégâts supplémentaires pour chaque 10% de tes points de vie manquants.`,
                 }
             }
 
@@ -718,11 +727,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Frost Armor",
                     ru: "Морозная броня",
+                    fr: "Armure de gel",
                 },
                 desc: {
                     en: `UNIQUE: When you take damage, attacker will be cursed and his movement speed slows down by ${ItemAbilityData.FROST_ARMOR_MOVESPEED_REDUCTION} and attack speed by ${(ItemAbilityData.FROST_ARMOR_ATTACK_SPEED_REDUCTION * 100).toFixed()}%`,
                     ru: `УНИКАЛЬНО(Пассивно): При получении урона, скрость передвижения нападающего будет снижкна на ${ItemAbilityData.FROST_ARMOR_MOVESPEED_REDUCTION}, а скорость атаки - на ${(ItemAbilityData.FROST_ARMOR_ATTACK_SPEED_REDUCTION * 100).toFixed()}%`,
                     br: `[Único]: Quando você recebe dano, o inimigo que está te atacando será amaldiçoado e sua velocidade de movimento diminuirá em ${ItemAbilityData.FROST_ARMOR_MOVESPEED_REDUCTION} e velocidade de ataque por ${(ItemAbilityData.FROST_ARMOR_ATTACK_SPEED_REDUCTION * 100).toFixed()}%.`,
+                    fr: `[UNIQUE]: Quand tu reçois des dégâts, l'attaquant est maudit. Sa vitesse de déplacement est diminuée de ${ItemAbilityData.FROST_ARMOR_MOVESPEED_REDUCTION} points de vitesse et sa vitesse d'attaque est diminuée de ${(ItemAbilityData.FROST_ARMOR_ATTACK_SPEED_REDUCTION * 100).toFixed()}%.`,
                 }
             }
 
@@ -731,11 +742,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Void Armor",
                     ru: "Броня пустоты",
+                    fr: "Armure du Vide",
                 },
                 desc: {
                     en: `Active: Makes you invisible for ${(ItemAbilityData.VOID_ARMOR_DURATION / 1000).toFixed(1)} sec in addition increase your movement speed by ${ItemAbilityData.VOID_ARMOR_MOVESPEED_BONUS} and damage by ${ItemAbilityData.VOID_ARMOR_BONUS_DAMAGE} - ${(ItemAbilityData.VOID_ARMOR_COOLDOWN / 1000).toFixed(1)} sec cd\n (removes on attack or spell cast)`,
                     ru: `УНИКАЛЬНО(Активно): Вы получаете невидимость на ${(ItemAbilityData.VOID_ARMOR_DURATION / 1000).toFixed(1)} сек., а также дополнительно получаете ${ItemAbilityData.VOID_ARMOR_MOVESPEED_BONUS} скорости передвижения и ${ItemAbilityData.VOID_ARMOR_BONUS_DAMAGE} атаки. (Перезарядка: ${(ItemAbilityData.VOID_ARMOR_COOLDOWN / 1000).toFixed(1)} сек.)\n (эффект пропадает при атаке или использовании способностей)`,
                     br: `[Ativo]: Torna você invisível por ${(ItemAbilityData.VOID_ARMOR_DURATION / 1000).toFixed(1)} seg além disso, aumente sua velocidade de movimento em ${ItemAbilityData.VOID_ARMOR_MOVESPEED_BONUS} e dano por ${ItemAbilityData.VOID_ARMOR_BONUS_DAMAGE}.\n [Tempo de recarga: ${(ItemAbilityData.VOID_ARMOR_COOLDOWN / 1000).toFixed(1)} seg.]\n (Acaba quando você usa algum ataque)`,
+                    fr: `[ACTIVATION]: Tu deviens invisible pour ${(ItemAbilityData.VOID_ARMOR_DURATION / 1000).toFixed(1)} sec, ta vitesse de déplacement est augmentée de ${ItemAbilityData.VOID_ARMOR_MOVESPEED_BONUS} points de vitesse et tes dégâts sont augmentés de ${ItemAbilityData.VOID_ARMOR_BONUS_DAMAGE}. \n [Délai de récupération : ${(ItemAbilityData.VOID_ARMOR_COOLDOWN / 1000).toFixed(1)} sec. \n (Effet interrompu si tu attaques ou utilises une compétence)]`,
                 }
             }
 
@@ -744,11 +757,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Titan's Armor",
                     ru: "Броня титана",
+                    fr: "Armure du Titan",
                 },
                 desc: {
                     en: `Active: Increase your health regen by ${ItemAbilityData.TITAN_ARMOR_REGENERATION}, remove all negative effects and makes you immune to all incoming damage for ${(ItemAbilityData.TITAN_ARMOR_DURATION / 1000).toFixed(1)} sec. You can't do any action during this effect!! - ${(ItemAbilityData.TITAN_ARMOR_COOLDOWN / 1000).toFixed(1)} sec cd`,
                     ru: `УНИКАЛЬНО(Активно): Вы становитесь неуязвимы, избавляетесь от негативных эффектов, а также получаете прибавку к регенерации здоровья в размере ${ItemAbilityData.TITAN_ARMOR_REGENERATION} на ${(ItemAbilityData.TITAN_ARMOR_DURATION / 1000).toFixed(1)} сек. Вы не можете выполнять никакие действия, пока активен данный эффект! (Перезарядка: ${(ItemAbilityData.TITAN_ARMOR_COOLDOWN / 1000).toFixed(1)} сек.)`,
                     br: `[Ativo]: Aumente sua regeneração de vida em ${ItemAbilityData.TITAN_ARMOR_REGENERATION}, remove todos os efeitos negativos e o torna imune a todos os danos recebidos por ${(ItemAbilityData.TITAN_ARMOR_DURATION / 1000).toFixed(1)} seg.\n [Tempo de recarga: ${(ItemAbilityData.TITAN_ARMOR_COOLDOWN / 1000).toFixed(1)} seg.]\n (Você não pode fazer nenhuma ação durante este efeito.)`,
+                    fr: `[ACTIVATION]: Pour ${(ItemAbilityData.TITAN_ARMOR_DURATION / 1000).toFixed(1)} sec, tu es pétrifié et immunisé contre tous les effets négatifs et dégâts. Ta régénération de points de vie est augmentée de ${ItemAbilityData.TITAN_ARMOR_REGENERATION}. \n [Délai de récupération : ${(ItemAbilityData.TITAN_ARMOR_COOLDOWN / 1000).toFixed(1)} sec.]`,
                 }
             }
         case Shared.ItemList.ChestOfMalevolence:
@@ -756,11 +771,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Chest of Malevolence",
                     ru: "Нагрудник злобы",
+                    fr: "Plastron de Malveillance",
                 },
                 desc: {
                     en: `UNIQUE: When you take magical damage, attacker will be silenced for ${(ItemAbilityData.CHEST_OF_MALEVOLENCE_DURATION / 1000).toFixed(1)} sec - ${(ItemAbilityData.CHEST_OF_MALEVOLENCE_COOLDOWN / 1000).toFixed(1)} sec cd`,
                     ru: `УНИКАЛЬНО(Пассивно): При получении магического урона, нападавший получит немоту на ${(ItemAbilityData.CHEST_OF_MALEVOLENCE_DURATION / 1000).toFixed(1)} сек. (Перезарядка: ${(ItemAbilityData.CHEST_OF_MALEVOLENCE_COOLDOWN / 1000).toFixed(1)} сек.)`,
                     br: `[Único]: Quando você recebe dano mágico, quem te atacou será silenciado por ${(ItemAbilityData.CHEST_OF_MALEVOLENCE_DURATION / 1000).toFixed(1)} seg.\n [Tempo de recarga: ${(ItemAbilityData.CHEST_OF_MALEVOLENCE_COOLDOWN / 1000).toFixed(1)} seg.]`,
+                    fr: `[UNIQUE]: Après avoir subi des dégâts magiques, l'attaquant est réduit au silence pour ${(ItemAbilityData.CHEST_OF_MALEVOLENCE_DURATION / 1000).toFixed(1)} sec. \n [Délai de récupération: ${(ItemAbilityData.CHEST_OF_MALEVOLENCE_COOLDOWN / 1000).toFixed(1)} sec.]`,
                 }
             }
 
@@ -770,11 +787,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Healing Potion",
                     ru: "Исцеляющее зелье",
+                    fr: "Potion de soin",
                 },
                 desc: {
                     en: `Active: Grants ${ItemAbilityData.HEALING_POTION_HEAL_PER_SEC} health regeneration for ${(ItemAbilityData.HEALING_POTION_DURATION / 1000).toFixed(1)} sec <br /> If you are attacked, the effect is lost!`,
                     ru: `Активно: Даёт ${ItemAbilityData.HEALING_POTION_HEAL_PER_SEC} регенерации здоровья на ${(ItemAbilityData.HEALING_POTION_DURATION / 1000).toFixed(1)} сек. <br /> Эффект пропадает преждевременно, если вы были атакованы во время его действия!`,
                     br: `[Ativo]: Beba a poção das fadas para receber regeneração de ${ItemAbilityData.HEALING_POTION_HEAL_PER_SEC} de vida por ${(ItemAbilityData.HEALING_POTION_DURATION / 1000).toFixed(1)} seg.\n (Se você for atacado, o efeito será perdido!)`,
+                    fr: `[ACTIVATION]: Régènère ${ItemAbilityData.HEALING_POTION_HEAL_PER_SEC} points de vie pour ${(ItemAbilityData.HEALING_POTION_DURATION / 1000).toFixed(1)} sec. \n Attention ! L'effet est interrompu si tu reçois des dégâts !`,
                 }
             }
 
@@ -783,11 +802,13 @@ const _getLocaleItemDescription = (itemId: number): { name: { [key in string]: s
                 name: {
                     en: "Scroll of Detection",
                     ru: "Свиток обнаружения",
+                    fr: "Rouleau de détection",
                 },
                 desc: {
                     en: `Active: Reveals all enemy invisible units in area! Revealed enemies are slowed by ${ItemAbilityData.SCROLL_OF_DETECTION_SLOW} ms for ${(ItemAbilityData.SCROLL_OF_DETECTION_SLOW_DURATION / 1000).toFixed(1)} sec`,
                     ru: `Активно: Раскрывает всех невидимых вражеских героев вокруг вас. Раскрытые враги замедляются на ${ItemAbilityData.SCROLL_OF_DETECTION_SLOW} на ${(ItemAbilityData.SCROLL_OF_DETECTION_SLOW_DURATION / 1000).toFixed(1)} сек.`,
                     br: `[Ativo]: Revela todas as unidades invisíveis inimigas na área! Inimigos revelados tem sua velocidade de movimento diminuída por ${ItemAbilityData.SCROLL_OF_DETECTION_SLOW} ms por ${(ItemAbilityData.SCROLL_OF_DETECTION_SLOW_DURATION / 1000).toFixed(1)} seg.`,
+                    fr: `[ACTIVATION]: Révèle tous les ennemis invisibles à proximité ! Les ennemis révélés sont ralentis de ${ItemAbilityData.SCROLL_OF_DETECTION_SLOW} points de vitesse pour ${ItemAbilityData.SCROLL_OF_DETECTION_SLOW} sec.`,
                 }
             }
         default: return {

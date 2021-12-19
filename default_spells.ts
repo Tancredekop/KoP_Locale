@@ -11,10 +11,11 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
             const enh_damage = getDamage(KumihuAbilityData.ENH_ATTACK_MOD_DAMAGE * abilityPower, SpellType.MAGICAL, KumihuAbilityData.ENH_ATTACK_BASE_DAMAGE + KumihuAbilityData.ENH_ATTACK_DAMAGE_PER_LEVEL * (level - 1));
 
             return {
-                en: `Kumihu's fires 4 bullets each deals ${basic_damage} normal damage <br /> Passive: Using Dash enchants Kumihu's next basic attack to deal ${enh_damage} magic damage and apply charm for ${toSec(KumihuAbilityData.ENH_CHARM_DURATION)}`,
+                en: `Kumihu's fires 3 bullets each deals ${basic_damage} normal damage <br /> Passive: Using Dash enchants Kumihu's next basic attack to deal ${enh_damage} magic damage and apply charm for ${toSec(KumihuAbilityData.ENH_CHARM_DURATION)}`,
                 ru: `Кумиху выпускает 3 снаряда, каждый из которых наносит ${basic_damage} физического урона <br /> Пассивно: Использование Тайного рывка зачаровывает следующую атаку Кумиху, которая нанесёт ${enh_damage} магического урона и наложит очарование на цель на ${toSec(KumihuAbilityData.ENH_CHARM_DURATION)}`,
-                cz: `Kumihu vystřelí 4 kulky, každá způsobí ${basic_damage} normálního poškození <br /> Pasivní: Použití Skoku očaruje další základní útok, aby způsobil ${enh_damage} magické poškození a očaruje protivnika na ${toSec(KumihuAbilityData.ENH_CHARM_DURATION)}` ,
+                cz: `Kumihu vystřelí 3 kulky, každá způsobí ${basic_damage} normálního poškození <br /> Pasivní: Použití Skoku očaruje další základní útok, aby způsobil ${enh_damage} magické poškození a očaruje protivnika na ${toSec(KumihuAbilityData.ENH_CHARM_DURATION)}` ,
                 br: `Kumihu dispara 3 rajadas de vento cada uma dando ${basic_damage} de dano normal.<br /> <br /> <b>[Passiva]: </b> Usar Dash dá a ela um bônus no próximo ataque básico, dando ${enh_damage} de dano mágico e encantando o inimigo por ${toSec(KumihuAbilityData.ENH_CHARM_DURATION)}.`,
+                fr: `Kumihu tire 3 projectiles faisant chacun ${basic_damage} point de dégâts normaux.<br /> <br /> <b>[PASSIF]: </b> La compétence L de Kumihi enchante la prochaine attaque J. Elle fait ${enh_damage} points de dégâts magiques et envoûte l'ennemi, le forçant à se rapprocher pour ${toSec(KumihuAbilityData.ENH_CHARM_DURATION)}.`,
             }
         }
 
@@ -27,7 +28,7 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
                 cz: `Kumihu vrhne modrou kouli, která způsobí ${base_damage} magického poškození, poté se k ní vrátí po dosažení maximálního dosahu a způsobí ${base_damage} magického poškození nepřátelům, kteří jí stojí v cestě.`,
 
                 br: `Kumihu comprime o ar a sua volta e lança uma rajada causando ${base_damage} de dano mágico, retornando para ela depois de atingir seu alcance máximo causando ${base_damage} de dano mágico a inimigos em seu caminho.`,
-
+                fr: `Kumihu envoie une boule d'énergie bleue qui fait ${base_damage} points de dégâts magiques et retourne vers elle après avoir atteint la distance maximum en faisant ${base_damage} points de dégâts magiques au passage.`,
             }
         }
 
@@ -39,6 +40,7 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
                 cz: `Kumihu vykročí dopředu a tím aktivuje svou pasivní schopnost na ${toSec(KumihuAbilityData.DASH_AURA_DURATION)}.`,
 
                 br: `Kumihu da um avanço em uma curta distância. Isso irá ativar sua passiva por ${toSec(KumihuAbilityData.DASH_AURA_DURATION)}.`,
+                fr: `Kumihu se précipite sur une courte distance. Cela active son passif pour ${toSec(KumihuAbilityData.DASH_AURA_DURATION)}.`,
 
             }
 
