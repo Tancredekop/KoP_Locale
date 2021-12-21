@@ -56,7 +56,7 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
                 cz: `Sparrow máchá mečem a způsobuje ${base_damage} za zásah. <br />Pasivní: Použití schopnosti nabije meč. Její další základní útok srazí nepřátele na ${toSec(SparrowAbilityData.ENHANCED_ATTACK_KNOCKBACK_DURATION)} a způsobí ${enh_damage} poškození.`,
 
                 br: `Sparrow corta seus inimigos causando ${base_damage} por ataque.<br /> <br /> <b>[Passiva]: </b> Usar uma habilidade, faz com que a espada de Sparrow fique carregada. Seu próximo ataque básico stuna os inimigos por ${toSec(SparrowAbilityData.ENHANCED_ATTACK_KNOCKBACK_DURATION)} e da um bônus de ${enh_damage} de dano.`,
-
+                fr: `Sparrow frappe avec son épée en faisant ${base_damage} points de dégâts par attque. <br /> <br /> <b>[PASSIF]</b> Utiliser une compétence K ou L charge l'épée de Sparrow. Lorsque son épée est chargée, sa prochaine attaque J frappera le sol en assommant l'ennemi pour ${toSec(SparrowAbilityData.ENHANCED_ATTACK_KNOCKBACK_DURATION)} et fait ${enh_damage} points de dégâts.`,
             }
         }
 
@@ -68,7 +68,7 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
                 cz: `Sparrow se vrhne kupředu a vytasí svůj meč, čímž omráčí nepřátele které zasáhne na ${toSec(SparrowAbilityData.DASH_STUN_DURATION + (SparrowAbilityData.DASH_STUN_DURATION_PER_LEVEL * (level - 1)))} a způsobí ${getDamage(0, type, SparrowAbilityData.DASH_BASE_DAMAGE)}.`,            
 
                 br: `Sparrow avança na direção que está olhando,  atordoando os inimigos acertados por ${toSec(SparrowAbilityData.DASH_STUN_DURATION + (SparrowAbilityData.DASH_STUN_DURATION_PER_LEVEL * (level - 1)))} e dando ${getDamage(0, type, SparrowAbilityData.DASH_BASE_DAMAGE)} de dano.`,
-
+                fr: `Sparrow s'élance rapidement en attaquant avec son épée, étourdissant tous les ennemies qu'elle touche pour ${toSec(SparrowAbilityData.DASH_STUN_DURATION + (SparrowAbilityData.DASH_STUN_DURATION_PER_LEVEL * (level - 1)))} en faisant ${getDamage(0, type, SparrowAbilityData.DASH_BASE_DAMAGE)} points de dégâts.`,
             }
 
         case Shared.SpellList.SPARROW_GROUND_SLAM: {
@@ -82,7 +82,7 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
                 cz: `Sparrow uvolní sílu uvnitř svého meče a vytvoří paprsek ve tvaru půlměsíce, který udělí ${base_damage} (plus ${percDamage} % chybějícího zdraví cíle) zasaženým nepřátelům.`,
 
                 br: `Sparrow canaliza todo o poder de sua espada, criando um feixe na sua frente que causa ${base_damage} (mais ${percDamage}% de vida perdida do alvo) para os inimigos que são atingidos.`,
-
+                fr: `Sparrow canalise toute l'énergie de son épée pour créer un rayon d'épée en forme de croissant, qui fait ${base_damage} (plus ${percDamage}% des points de vie manquant de la cible) aux ennemis touchés.`,
             }
         }
 
@@ -90,13 +90,13 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
         case Shared.SpellList.ICEAT_AUTOATTACK: {
             const base_damage = getDamage(ICeatAbilityData.AUTOATTACK_MOD_DAMAGE * damage);
             return {
-                en: `I'ceat hurls a ball of snow a short distance dealing ${base_damage} damge <br />Passive: Basic attacks slow enemies by ${-ICeatAbilityData.AUTOATTACK_SLOW} speed and stacks with the slow of his abilities.`,
+                en: `I'ceat hurls a ball of snow a short distance dealing ${base_damage} damage <br />Passive: Basic attacks slow enemies by ${-ICeatAbilityData.AUTOATTACK_SLOW} speed and stacks with the slow of his abilities.`,
                 ru: `Ай'сит швырает снежок на короткую дистанцию, нанося ${base_damage} физического урона <br />Пассивно: Атаки замедляют врагов на ${-ICeatAbilityData.AUTOATTACK_SLOW}, складываясь с замедлением от способностей Ай'сита.`,
 
                 cz: `I'ceat mrští sněhovou kouli na krátkou vzdálenost a způsobí ${base_damage} poškození <br />Pasivní: Základní útoky zpomalí nepřátele o ${-ICeatAbilityData.AUTOATTACK_SLOW} a sčítá se s spomalením ostatních schopností.`,
 
                 br: `Iceat arremessa uma bola de neve a curta distância causando ${base_damage} de dano.<br /> <br /> <b>[Passiva]: </b> Ataques básicos dão lentidão nos inimigos de ${-ICeatAbilityData.AUTOATTACK_SLOW}, podendo somar com a lentidão de suas habilidades.`,
-
+                fr: `I'Ceat lance une boule de neige à courte distance, faisant ${base_damage} points de dégâts. <br /> <br /> <b>[Passif]: </b> Les attaques J de I'Ceat ralentissent les ennemis de ${-ICeatAbilityData.AUTOATTACK_SLOW} points de vitesse, qui se cumulent aux ralentissements de ses compétences K et L.`,
             }
         }
         case Shared.SpellList.ICEAT_ICICLE_BOLT: {
@@ -109,7 +109,7 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
                 cz: `I'ceat vystřelí tři střepy ledu, z nichž každý zpomalí nepřátele o ${-ICeatAbilityData.ICICLE_SLOW_PER_STACK}, což způsobí ${base_damage} při každém zásahu. <br />Zasáhnete-li všemi třemi, znehybní nepřítele na ${toSec(ICeatAbilityData.ICICLE_ROOT_DURATION)}`,
 
                 br: `Iceat dispara três estilhaços de gelo, cada estilhaço acertado reduz a velocidade do inimigo em ${-ICeatAbilityData.ICICLE_SLOW_PER_STACK}, adicionando ${base_damage} de dano para cada ataque. <br />Atingir todos os três estilhaços em um inimigo enraiza ele por ${toSec(ICeatAbilityData.ICICLE_ROOT_DURATION)}.`,
-
+                fr: `I'Ceat tire  successivement trois éclats de glace, chacun ralentissant l'ennemi de ${-ICeatAbilityData.ICICLE_SLOW_PER_STACK} points de vitesse en se cumulant, faisant ${base_damage} points de dégâts pour chaque éclat. <br />Si l'ennemi est touché par les trois éclats, il est enraciné pour ${toSec(ICeatAbilityData.ICICLE_ROOT_DURATION)}.`,
             }
         }
 
@@ -126,7 +126,8 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
 
                 br: `Iceat desliza no chão, aumentando sua velocidade em ${ICeatAbilityData.COLD_EMBRACE_BONUS_SPEED} por ${toSec(ICeatAbilityData.COLD_EMBRACE_DURATION)} e deixando uma trilha de gelo,` +
                     `dando ${base_damage} de dano por segundo aos inimigos que pisam na trilha.`,
-
+                fr: `I'Ceat glisse sur le sol, augmentant sa vitesse de ${ICeatAbilityData.COLD_EMBRACE_BONUS_SPEED} pour ${toSec(ICeatAbilityData.COLD_EMBRACE_DURATION)} en laissant une trace de glace,` +
+                    `faisant ${base_damage} points de dégâts par seconde aux ennemis qui se trouvent sur ses traces et en les ralentissant.`,
             }
         }
 
@@ -139,7 +140,7 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
                 cz: `Belle vystřelí výbušný trn ze své hůlky a způsobí ${getDamage(BelleAbilityData.AUTOATTACK_MOD_DAMAGE * damage)} poškození v malé oblasti.`,
 
                 br: `Belle atira uma flor explosiva de sua varinha causando ${getDamage(BelleAbilityData.AUTOATTACK_MOD_DAMAGE * damage)} de dano em área.`,
-
+                fr: `Belle tire une fleur explosive de sa baguette, faisant ${getDamage(BelleAbilityData.AUTOATTACK_MOD_DAMAGE * damage)} points de dégâts de zone.`,
             }
 
         case Shared.SpellList.BELLE_PRICKLY_VINE: {
@@ -157,7 +158,8 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
 
                 br: `Belle lança uma videira para frente que se liga a um inimigo causando ${base_damage} de dano e diminuindo a sua velocidade de movimento.` +
                     `<br /> Depois de 2 segundos, se a videira ainda estiver presa no inimigo, ela vai prender ele o atordoando por ${toSec(BelleAbilityData.PRICKLY_VINE_STUN_DURATION)} e causando ${attach_damage} de dano. <br /> <br />(Ela pode ser quebrada se o inimigo se mover para longe o suficiente de Belle.)`,
-
+                fr: `Belle lance une ronce qui s'attache à un ennemi, faisant ${base_damage} points de dégâts et en les ralentissant. <br />Ce lien peut être rompi si l'ennemi s'éloigne trop de Belle.`+
+                    `<br /> Après un court instant, si la ronce est toujours attachée, elle disparaît en assommant l'ennemi pour ${toSec(BelleAbilityData.PRICKLY_VINE_STUN_DURATION)} en faisant ${attach_damage} points de dégâts`,
             }
         }
 
@@ -165,7 +167,7 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
             const base_damage = getDamage(BelleAbilityData.FLORAL_AMBUSH_DAMAGE_MOD * abilityPower, type, BelleAbilityData.FLORAL_AMBUSH_BASE_DAMAGE + BelleAbilityData.FLORAL_AMBUSH_DAMAGE_PER_LEVEL * (level - 1));
             return {
                 en: `Belle jumps in the air and drops three seed bombs in front of her that attaches to an enemy if they get near doing ${base_damage} over 2 seconds and exploding after the duration, doing ${base_damage} AoE damage` +
-                    `<br /><br />After staying on the ground for ${toSec(BelleAbilityData.FLORAL_AMBUSH_DOT_DURATION)}, the seeds explode dealing ${base_damage} AoE damage to surrounding enemies. Enemy that step on bomb while carrying one will immediately trigger explosion`,
+                    `<br /><br />After staying on the ground for ${toSec(BelleAbilityData.FLORAL_AMBUSH_DOT_DURATION)}, the seeds explode dealing ${base_damage} AoE damage to surrounding enemies. Enemy that steps on bomb while carrying one will immediately trigger explosion`,
                 ru: `Белла подпрыгивает и сбрасывает три цветочные бомбы перед собой, которые приклепляются к вражескому герою, если он наступит на них, нанося цели ${base_damage} урона в течение 2 секунд, взрываясь после этого, нанося ${base_damage} урона по площади` +
                     `<br /><br />После пребывания на земле в течение ${toSec(BelleAbilityData.FLORAL_AMBUSH_DOT_DURATION)}, цветы взрываются, нанося ${base_damage} урона по площади ближайшим врагам. Враг, ступивший на бомбу с уже прикреплённой до этого, моментально взорвёт предыдущую.`,
 
@@ -174,7 +176,8 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
 
                 br: `Belle plana no ar e lança três bombas de flor em sua frente, se prendendendo a um inimigo causando ${base_damage} de dano, depois de 2 segundos explode novamente se o inimigo estiver com uma semente, causando ${base_damage} de dano.` +
                     `<br /><br />Depois de ficar no chão por ${toSec(BelleAbilityData.FLORAL_AMBUSH_DOT_DURATION)}, as flores explodem causando ${base_damage} de dano nos inimigos por perto. Inimigos que pisarem nas bombas enquanto elas carregam, irám imediatamente desencadear uma explosão.`,
-
+                fr: `Belle fait un bond et jette trois graines-bombes au sol devant elle, qui s'attachent au premier ennemi qui s'approche, en faisant ${base_damage} points de dégâts en deux secondes. À la fin de ce délai, les graines explosent, faisant ${base_damage} point de dégâts de zone` +
+                    `<br /><br /> Après être restées sur le sol pendant ${toSec(BelleAbilityData.FLORAL_AMBUSH_DOT_DURATION)}, les graines explosent en faisant ${base_damage} points de dégâts de zone. Un ennemi qui marche sur une graine en portant une autre graine entraîne l'explosion immédiate.`,
             }
         }
 
@@ -182,11 +185,11 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
         case Shared.SpellList.THOMAS_AUTOATTACK:
             return {
 
-                en: `Bunninja slashes with his carrot and deals ${getDamage(ThomasAbilityData.AUTOATTACK_DAMAGE_MOD * damage)} damage.`,
+                en: `Thomas slashes with his sword and deals ${getDamage(ThomasAbilityData.AUTOATTACK_DAMAGE_MOD * damage)} damage.`,
                 ru: `Банниндзя взмахивает своей морковью, нанося ${getDamage(ThomasAbilityData.AUTOATTACK_DAMAGE_MOD * damage)} физического урона.`,
-                cz: `Bunninja seká svou mrkví a udělí ${getDamage(ThomasAbilityData.AUTOATTACK_DAMAGE_MOD * damage)} poškození.`,
+                cz: `Thomas seká svou mrkví a udělí ${getDamage(ThomasAbilityData.AUTOATTACK_DAMAGE_MOD * damage)} poškození.`,
                 br: `Thomas faz um corte com espada e causa ${getDamage(ThomasAbilityData.AUTOATTACK_DAMAGE_MOD * damage)} de dano.`,
-
+                fr: `Thomas donne un coup d'épée en faisant ${getDamage(ThomasAbilityData.AUTOATTACK_DAMAGE_MOD * damage)} points de dégâts.`,
             }
 
         case Shared.SpellList.THOMAS_SHURIKEN_TOSS: {
@@ -194,11 +197,11 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
 
             return {
 
-                en: `Bunninja throws three carrot-like shurikens which deals ${base_damage} damage to all enemies on the way. They return to him after a short time dealing ${base_damage} damage to all enemies in the way.`,
+                en: `Thomas throws three shurikens which deals ${base_damage} damage to all enemies on the way. They return to him after a short time dealing ${base_damage} damage to all enemies in the way.`,
                 ru: `Банниндзя бросает три морковоподобных сюрикена перед собой, которые наносят ${base_damage} магического урона всем врагам на своём пути. Они возвращаются к нему спустя небольшой промежуток времени, повторно нанося ${base_damage} магического урона всем врагам на своём пути.`,
-                cz: `Bunninja hodí tři mrkvovité shurikeny, které způsobí ${base_damage} poškození všem nepřátelům na cestě. Vrátí se k němu po krátké době a udělí ${base_damage} poškození všem nepřátelům, kteří mu stojí v cestě.`,
+                cz: `Thomas hodí tři mrkvovité shurikeny, které způsobí ${base_damage} poškození všem nepřátelům na cestě. Vrátí se k němu po krátké době a udělí ${base_damage} poškození všem nepřátelům, kteří mu stojí v cestě.`,
                 br: `Thomas lança com sua espada demoníaca, três shurikens que causam ${base_damage} de dano a todos inimigos no caminho. Elas voltam para ele depois de um curto período de tempo causando ${base_damage} de dano a todos inimigos no caminho.`,
-
+                fr: `Thomas lance trois shurikens qui font ${base_damage} points de dégât à tous les ennemis sur le chemin. Ils reviennent vers lui après un court instant, en faisant ${base_damage} points de dégâts à tous les ennemis sur le chemin.`,
             }
         }
 
@@ -206,14 +209,16 @@ const _getSpellDescription = (id: Shared.SpellList, damage: number, abilityPower
             const base_damage = getDamage(damage, type, ThomasAbilityData.SHADOW_CARROT_BASE_DAMAGE);
 
             return {
-                en: `<b>First cast: </b>Bunninja throws an attaching carrot. He can teleport to it with ${toSec(ThomasAbilityData.SHADOW_CARROT_DURATION)} of casting. <br /> <br />` +
-                    `<b>Second cast: </b>Teleports to the carrot. If it is attached to an enemy, Bunninja stuns that enemy for ${toSec(ThomasAbilityData.SHADOW_CARROT_STUN_DURATION)} and deals ${base_damage} damage to them.`,
+                en: `<b>First cast: </b>Thomas throws his sword. He can teleport to it with ${toSec(ThomasAbilityData.SHADOW_CARROT_DURATION)} of casting. <br /> <br />` +
+                    `<b>Second cast: </b>Teleports to his sword. If it is attached to an enemy, Thomas stuns that enemy for ${toSec(ThomasAbilityData.SHADOW_CARROT_STUN_DURATION)} and deals ${base_damage} damage to them.`,
                 ru: `<b>Первое применение: </b>Банниндзя бросает прикрепляющуюся морковь. Он может телепортироваться к ней в течение ${toSec(ThomasAbilityData.SHADOW_CARROT_DURATION)} после первого применения. <br /> <br />` +
                     `<b>Второе применение: </b>Телепортируется к моркови. Если она прикрепилась к врагу, Банниндзя оглушает этого врага на ${toSec(ThomasAbilityData.SHADOW_CARROT_STUN_DURATION)} и наносит ему ${base_damage} физического урона.`,
-                cz: `První použití: Bunninja hodí stínovou mrkev. Může se k ní teleportovat do ${toSec(ThomasAbilityData.SHADOW_CARROT_DURATION)} vteřin po použití. `
-                    + `Druhé použití: Bunninja se teleportuje k mrkvi. Pokud je připojena k nepříteli, Bunninja omráčí tohoto nepřítele na ${toSec(ThomasAbilityData.SHADOW_CARROT_STUN_DURATION)} a udělí ${base_damage} poškození.`,
+                cz: `První použití: Thomas hodí stínovou mrkev. Může se k ní teleportovat do ${toSec(ThomasAbilityData.SHADOW_CARROT_DURATION)} vteřin po použití. `
+                    + `Druhé použití: Thomas se teleportuje k mrkvi. Pokud je připojena k nepříteli, Thomas omráčí tohoto nepřítele na ${toSec(ThomasAbilityData.SHADOW_CARROT_STUN_DURATION)} a udělí ${base_damage} poškození.`,
                 br: `<b>Primeira Ativação: </b>Thomas joga sua espada demoníaca. Ele pode se teletransportar para lá depois de ${toSec(ThomasAbilityData.SHADOW_CARROT_DURATION)} de duração. <br /> <br />` +
                     `<b>Segunda Ativação: </b>Teleporta-se para a espada. Se estiver atingido um inimigo, ele Teleporta-se para o inimigo o atordoando por ${toSec(ThomasAbilityData.SHADOW_CARROT_STUN_DURATION)} e causando ${base_damage} de dano.`,
+                fr: `<b>Première activation : </b>Thomas lance son épée. Il peut se téléporter jusqu'à elle pendant ${toSec(ThomasAbilityData.SHADOW_CARROT_DURATION)}. <br /> <br />`+
+                    `<b>Deuxième activation: </b>Thomas se téléporte jusqu'à son épée. Si elle est attachée à un ennemi, Thomas assomme l'ennemi pour ${toSec(ThomasAbilityData.SHADOW_CARROT_STUN_DURATION)} et fait ${base_damage} point de dégâts.`, 
             }
         }
         /** Veil */
